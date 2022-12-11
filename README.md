@@ -1,4 +1,6 @@
 # Lab4JonathanSchempp
+
+OLD CODE
 //Random Name generator
 
 Random r = new Random();
@@ -31,4 +33,4 @@ for (int x = 0; x < firstname.Length; x++)
                     Console.WriteLine($"{numberlist}: {fullnames[x]}: hourly wage: ${wage}, yearly income: ${wage*48*40}");
                     }
             }
-    }
+    } 
