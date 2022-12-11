@@ -14,19 +14,19 @@ double[] Decimal = new double[]{.25,.5,.75};
 int numberlist = 0;
 
 for (int x = 0; x < firstname.Length; x++)
+{
+    for (int y = 0; y < middlename.Length; y++)
     {
-        for (int y = 0; x < middlename.Length; y++)
-            {
-                for (int z = 0; z < lastname.Length; z++)
-                    {
-                    int randomdecimal = r.Next(0,3);
-                    int random = r.Next(0, 5);
-                    int randomwage = r.Next(7,80);
-                    double wage = (double)randomwage;
-                    wage = wage + Decimal[randomdecimal];
-                    fullnames[x] = firstname[x] + middlename[y] + lastname[z] + job[random];
-                    numberlist++;
-                    Console.WriteLine($"{numberlist}: {fullnames[x]}: hourly wage: ${wage}, yearly income: ${wage*48*40}");
-                    }
-            }
+        for (int z = 0; z < lastname.Length; z++)
+        { 
+            int randomdecimal = r.Next(0,3);
+            int random = r.Next(0, 5);
+            int randomWage = r.Next(7,80);
+            double Wage = (double)randomWage;
+             Wage = Wage + Decimal[randomdecimal];
+            fullnames[x] = firstname[x] + middlename[y] + lastname[z] + job[random];
+            numberlist++;
+            Console.WriteLine($"{numberlist}: {fullnames[x]}: Hourly wage: ${Wage} Yearly Salary: ${Wage*40*50} ");
+        }
     }
+}
